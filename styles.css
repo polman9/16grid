@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr); /* Creates a grid with 16 equal columns */
+    gap: 0px; /* No gap between the grid items */
+    width: 960px; /* Define the container width */
+}
+
+.oneOfSixteen {
+    width: 100%; /* 100% of the column's width */
+    aspect-ratio: 1 / 1; /* Ensures each div is a square */
+    border: 1px solid;
+    box-sizing: border-box; /* Includes the border in the element's width/height */
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+/* Optional hover effect */
+.oneOfSixteen:hover {
+    background-color: lightblue;
+    transform: scale(1.02);
+    border-color: blue;
+}
